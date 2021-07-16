@@ -9,6 +9,8 @@ import {
     School,
     WorkOutline
 } from "@material-ui/icons";
+import {Users} from "../../../Data/User";
+import OfflineUsersComponent from "./OfflineUsers";
 
 export default function LeftSideBar() {
     return (
@@ -55,90 +57,9 @@ export default function LeftSideBar() {
                 <button className={"left-button"}>Show More</button>
                 <hr className={"left-hr"}/>
                 <ul className={"left-friend-list"}>
-                    <li className={"left-friend"}>
-                        <img className={"left-friend-img"} src={"/assets/person/2.jpeg"} alt={''}/>
-                        <span className={"left-friend-name"}>Jane Doe</span>
-                    </li>
-                    <li className={"left-friend"}>
-                        <img className={"left-friend-img"} src={"/assets/person/2.jpeg"} alt={''}/>
-                        <span className={"left-friend-name"}>Jane Doe</span>
-                    </li>
-                    <li className={"left-friend"}>
-                        <img className={"left-friend-img"} src={"/assets/person/2.jpeg"} alt={''}/>
-                        <span className={"left-friend-name"}>Jane Doe</span>
-                    </li>
-                    <li className={"left-friend"}>
-                        <img className={"left-friend-img"} src={"/assets/person/2.jpeg"} alt={''}/>
-                        <span className={"left-friend-name"}>Jane Doe</span>
-                    </li>
-                    <li className={"left-friend"}>
-                        <img className={"left-friend-img"} src={"/assets/person/2.jpeg"} alt={''}/>
-                        <span className={"left-friend-name"}>Jane Doe</span>
-                    </li>
-                    <li className={"left-friend"}>
-                        <img className={"left-friend-img"} src={"/assets/person/2.jpeg"} alt={''}/>
-                        <span className={"left-friend-name"}>Jane Doe</span>
-                    </li>
-                    <li className={"left-friend"}>
-                        <img className={"left-friend-img"} src={"/assets/person/2.jpeg"} alt={''}/>
-                        <span className={"left-friend-name"}>Jane Doe</span>
-                    </li>
-                    <li className={"left-friend"}>
-                        <img className={"left-friend-img"} src={"/assets/person/2.jpeg"} alt={''}/>
-                        <span className={"left-friend-name"}>Jane Doe</span>
-                    </li>
-                    <li className={"left-friend"}>
-                        <img className={"left-friend-img"} src={"/assets/person/2.jpeg"} alt={''}/>
-                        <span className={"left-friend-name"}>Jane Doe</span>
-                    </li>
-                    <li className={"left-friend"}>
-                        <img className={"left-friend-img"} src={"/assets/person/2.jpeg"} alt={''}/>
-                        <span className={"left-friend-name"}>Jane Doe</span>
-                    </li>
-                    <li className={"left-friend"}>
-                        <img className={"left-friend-img"} src={"/assets/person/2.jpeg"} alt={''}/>
-                        <span className={"left-friend-name"}>Jane Doe</span>
-                    </li>
-                    <li className={"left-friend"}>
-                        <img className={"left-friend-img"} src={"/assets/person/2.jpeg"} alt={''}/>
-                        <span className={"left-friend-name"}>Jane Doe</span>
-                    </li>
-                    <li className={"left-friend"}>
-                        <img className={"left-friend-img"} src={"/assets/person/2.jpeg"} alt={''}/>
-                        <span className={"left-friend-name"}>Jane Doe</span>
-                    </li>
-                    <li className={"left-friend"}>
-                        <img className={"left-friend-img"} src={"/assets/person/2.jpeg"} alt={''}/>
-                        <span className={"left-friend-name"}>Jane Doe</span>
-                    </li>
-                    <li className={"left-friend"}>
-                        <img className={"left-friend-img"} src={"/assets/person/2.jpeg"} alt={''}/>
-                        <span className={"left-friend-name"}>Jane Doe</span>
-                    </li>
-                    <li className={"left-friend"}>
-                        <img className={"left-friend-img"} src={"/assets/person/2.jpeg"} alt={''}/>
-                        <span className={"left-friend-name"}>Jane Doe</span>
-                    </li>
-                    <li className={"left-friend"}>
-                        <img className={"left-friend-img"} src={"/assets/person/2.jpeg"} alt={''}/>
-                        <span className={"left-friend-name"}>Jane Doe</span>
-                    </li>
-                    <li className={"left-friend"}>
-                        <img className={"left-friend-img"} src={"/assets/person/2.jpeg"} alt={''}/>
-                        <span className={"left-friend-name"}>Jane Doe</span>
-                    </li>
-                    <li className={"left-friend"}>
-                        <img className={"left-friend-img"} src={"/assets/person/2.jpeg"} alt={''}/>
-                        <span className={"left-friend-name"}>Jane Doe</span>
-                    </li>
-                    <li className={"left-friend"}>
-                        <img className={"left-friend-img"} src={"/assets/person/2.jpeg"} alt={''}/>
-                        <span className={"left-friend-name"}>Jane Doe</span>
-                    </li>
-                    <li className={"left-friend"}>
-                        <img className={"left-friend-img"} src={"/assets/person/2.jpeg"} alt={''}/>
-                        <span className={"left-friend-name"}>Jane Doe</span>
-                    </li>
+                    {Users.map(user => (
+                        <OfflineUsersComponent key={user.id} user={user}/>
+                    ))}
                 </ul>
             </div>
         </div>
