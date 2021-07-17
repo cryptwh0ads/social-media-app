@@ -76,7 +76,7 @@ export default function RightSideBar({ profile }) {
         <>
         <div className={"right-sidebar"}>
             <div className={"right-wrapper"}>
-                <ProfileRightBar />
+                {(profile ? <ProfileRightBar/> : <HomeRightBar/>)}
             </div>
         </div>
         </>
