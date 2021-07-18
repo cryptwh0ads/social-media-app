@@ -2,7 +2,7 @@ export const Posts = [
     {
         id: 1,
         description: "Wow",
-        photo: "assets/post/1.jpeg",
+        photo: "post/1.jpeg",
         date: "5 mins ago",
         userId: 1,
         likes: 12,
@@ -11,7 +11,7 @@ export const Posts = [
     {
         id: 2,
         description: "Wow",
-        photo: "assets/post/3.jpeg",
+        photo: "post/3.jpeg",
         date: "30 mins ago",
         userId: 7,
         likes: 56,
@@ -20,7 +20,7 @@ export const Posts = [
     {
         id: 3,
         description: "Wow",
-        photo: "assets/post/10.jpeg",
+        photo: "post/10.jpeg",
         date: "1 day ago",
         userId: 6,
         likes: 10,
@@ -28,7 +28,7 @@ export const Posts = [
     },
     {
         id: 4,
-        photo: "assets/post/4.jpeg",
+        photo: "post/4.jpeg",
         date: "3 weeks ago",
         userId: 3,
         likes: 5,
@@ -37,7 +37,7 @@ export const Posts = [
     {
         id: 5,
         description: "Wow",
-        photo: "assets/post/7.jpeg",
+        photo: "post/7.jpeg",
         date: "30 mins ago",
         userId: 5,
         likes: 209,
